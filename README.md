@@ -1,0 +1,2 @@
+al no tener tiempo de hacer los comentarios de paso a paso de este ejercicio solo puedo adjuntar capturas de que se ha hecho correctamente.
+![Captura del sistema DNS](C:\Users\Ayoub\OneDrive\Imágenes\Capturas de pantalla/Captura de pantalla 2024-10-21 233107.png) 
