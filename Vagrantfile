@@ -22,7 +22,7 @@ config.vm.define "tierra" do |tierra|
   cp -v /vagrant/named.conf.local /etc/bind
   cp -v /vagrant/db.sistema.test /etc/bind
   cp -v /vagrant/db.192 /etc/bind
-  
+
   systemctl restart named
 
   SHELL
@@ -38,6 +38,9 @@ config.vm.define "venus" do |venus|
     apt-get update
     apt-get install -y bind9 dnsutils
   
+    cp -v /vagrant/named.conf.options /etc/bind/
+    cp -v /vagrant/named.conf.local /etc/bind/
+
     SHELL
 
   
