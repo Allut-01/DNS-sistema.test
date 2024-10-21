@@ -17,6 +17,14 @@ config.vm.define "tierra" do |tierra|
   apt-get update
   apt-get install -y bind9 dnsutils
 
+  cp -v /vagrant/named /etc/default
+  cp -v /vagrant/named.conf.options /etc/bind
+  cp -v /vagrant/named.conf.local /etc/bind
+  cp -v /vagrant/db.sistema.test /etc/bind
+  cp -v /vagrant/db.192 /etc/bind
+  
+  systemctl restart named
+
   SHELL
   end
 
